@@ -6,16 +6,28 @@ public class Bullet : MonoBehaviour
 {
     public float speed;
     private Vector2 direction;
-    private Rigidbody2D rb2d;
+    public Rigidbody2D rb2d;
 
+    private Vector2 origionalPosition;
+    private Camera mainCamera;
+
+    private void Start()
+    {
+        origionalPosition = transform.position;
+        mainCamera = Camera.main;
+    }
     private void Update()
     {      
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0) && rb2d.velocity == Vector2.zero)
         {
-            direction = Input.mousePosition - transform.position;
-            direction *= speed;
+            direction = mainCamera.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+            rb2d.AddForce(direction.normalized * speed);
+        }
 
-            rb2d.AddForce(direction);
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            rb2d.velocity = Vector2.zero;
+            transform.position = origionalPosition;
         }
     } 
 }
