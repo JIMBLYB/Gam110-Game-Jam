@@ -8,12 +8,12 @@ public class Bullet : MonoBehaviour
     private Vector2 direction;
     public Rigidbody2D rb2d;
 
-    private Vector2 origionalPosition;
+    private Vector2 originalPosition;
     private Camera mainCamera;
 
     private void Start()
     {
-        origionalPosition = transform.position;
+        originalPosition = transform.position;
         mainCamera = Camera.main;
     }
     private void Update()
@@ -27,7 +27,7 @@ public class Bullet : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             rb2d.velocity = Vector2.zero;
-            transform.position = origionalPosition;
+            transform.position = originalPosition;
         }
     } 
 }
