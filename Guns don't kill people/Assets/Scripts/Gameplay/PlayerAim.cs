@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿#pragma warning disable 0649
+using UnityEngine;
 
 public class PlayerAim : MonoBehaviour
 {
@@ -6,6 +7,8 @@ public class PlayerAim : MonoBehaviour
     private Transform playerParent;
     [SerializeField]
     private Transform headPivot;
+    [SerializeField]
+    private Transform firingPos;
     [SerializeField]
     private float aimRotationSpeed = 1.25f;
     [Range(-1, 1)]
@@ -17,20 +20,39 @@ public class PlayerAim : MonoBehaviour
     private Vector3 mousePosition;
     private Camera mainCamera;
 
+    [SerializeField]
+    private GameObject particlePrefab;
+    private Animator anim;
+
     private void Start()
     {
         mainCamera = Camera.main;
         originalHeadScale = playerParent.localScale;
+
+        anim = playerParent.GetComponent<Animator>();
     }
 
     private void Update()
     { 
         mousePosition = GetMousePos(Input.mousePosition);
 
-        print(mousePosition.normalized.y);
         if (mousePosition.normalized.y > rotationLimiter)
         {
             FlipSprite();
+        }
+
+        FireGun(KeyCode.Mouse0);
+    }
+
+    private void FireGun(KeyCode input)
+    {
+        if (Input.GetKeyDown(input))
+        {
+            anim.SetTrigger("PlayerShoot");
+
+            Vector3 direction = firingPos.right;
+            direction *= playerParent.localScale.x;
+            ParticleManager.Instance.SpawnParticle(particlePrefab, firingPos.position, direction);
         }
     }
 
