@@ -1,28 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System;
 using UnityEngine;
 
 public class Breaking : MonoBehaviour
 {
     public bool object_Bounces;
     [SerializeField]
-    private Collider2D collider;
+    private Collider2D object_Collider;
 
     private void Start()
     {
         if (object_Bounces)
         {
-            collider.isTrigger = false;
+            object_Collider.isTrigger = false;
         }
         else if (!object_Bounces)
         {
-            collider.isTrigger = true;
+            object_Collider.isTrigger = true;
         }
     }
 
     private void OnCollisionEnter2D(Collision2D colision)
     {
-
+        
     }
 }

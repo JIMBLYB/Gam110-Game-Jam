@@ -122,6 +122,8 @@ GameObject:
   m_Component:
   - component: {fileID: 70394538}
   - component: {fileID: 70394537}
+  - component: {fileID: 70394540}
+  - component: {fileID: 70394539}
   m_Layer: 0
   m_Name: Breakable_Object
   m_TagString: Untagged
@@ -191,6 +193,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &70394539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70394536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e1fea5bd9695644fa223df896dd2f21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &70394540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70394536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9b7dcee993eb6f4caab3c1878803d3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
