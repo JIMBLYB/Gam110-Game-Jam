@@ -142,8 +142,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d0847392af6bce42abcfb2c60d7cf05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerParent: {fileID: 436546855}
   headPivot: {fileID: 1193061714}
   aimRotationSpeed: 7.5
+  rotationLimiter: -0.5
 --- !u!212 &436546854
 SpriteRenderer:
   m_ObjectHideFlags: 0
