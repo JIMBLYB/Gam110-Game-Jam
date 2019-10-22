@@ -122,7 +122,6 @@ GameObject:
   m_Component:
   - component: {fileID: 70394538}
   - component: {fileID: 70394537}
-  - component: {fileID: 70394540}
   - component: {fileID: 70394539}
   m_Layer: 0
   m_Name: Breakable_Object
@@ -205,18 +204,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e1fea5bd9695644fa223df896dd2f21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &70394540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 70394536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9b7dcee993eb6f4caab3c1878803d3b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  object_Bounces: 1
+  object_Collider: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -311,6 +300,7 @@ GameObject:
   - component: {fileID: 781710819}
   - component: {fileID: 781710817}
   - component: {fileID: 781710818}
+  - component: {fileID: 781710821}
   m_Layer: 0
   m_Name: Wall
   m_TagString: Untagged
@@ -364,7 +354,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 7
+  m_Constraints: 4
 --- !u!212 &781710819
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -427,6 +417,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &781710821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781710816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0a60a98e6dba2d4687ce95c3c6c5302, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gravityScaleOnHit: 1
+  rb2d: {fileID: 0}
 --- !u!1 &1972689989
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,7 +467,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
-  m_Material: {fileID: 6200000, guid: aa78cdecdc61c664e872d1c5a03f2227, type: 2}
+  m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0

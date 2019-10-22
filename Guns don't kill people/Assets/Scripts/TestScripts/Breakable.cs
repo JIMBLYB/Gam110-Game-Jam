@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Breaking : MonoBehaviour
+public class Breakable : MonoBehaviour
 {
     public bool object_Bounces;
     [SerializeField]
