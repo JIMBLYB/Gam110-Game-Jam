@@ -29,5 +29,9 @@ public class Bullet : MonoBehaviour
             rb2d.velocity = Vector2.zero;
             transform.position = originalPosition;
         }
-    } 
+    }
+    void OnTriggerEnter(Collider col)
+    {
+        Destroy(col.gameObject);
+    }
 }

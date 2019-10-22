@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Breaking : MonoBehaviour
+public class Breakable : MonoBehaviour
 {
     public bool object_Bounces;
     [SerializeField]
@@ -19,9 +19,8 @@ public class Breaking : MonoBehaviour
             object_Collider.isTrigger = true;
         }
     }
-
-    private void OnCollisionEnter2D(Collision2D colision)
+    void OnCollisionEnter2D()
     {
-        
+        Destroy(gameObject);
     }
 }
