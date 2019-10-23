@@ -14,11 +14,9 @@ public class ShootingScript : MonoBehaviour
     private float speed = 1f;
 
     private int shots = 3;
-    
+
     void Update()
     {
-        
-       
         if (Input.GetMouseButtonDown(0))
         {
             if (shots > 0)
@@ -31,6 +29,6 @@ public class ShootingScript : MonoBehaviour
     private void FireBullet()
     {
         GameObject firedBullet = Instantiate(bullet, barrelTip.position, barrelTip.rotation);
-        firedBullet.GetComponent<Rigidbody2D>().AddRelativeForce(Vector2.right * speed );
+        firedBullet.GetComponent<Rigidbody2D>().AddRelativeForce(Vector2.right * speed);
     }
 }
