@@ -411,29 +411,6 @@ Transform:
   m_Father: {fileID: 991538239}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &496599696 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7517157588542323199, guid: a9c79d30788cc9948bc5c08a894a0f03,
-    type: 3}
-  m_PrefabInstance: {fileID: 1746874429}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &496599703
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 496599696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7cfaa8460b8f6d479bf0cbaca9ff5cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  barrelTip: {fileID: 822784594}
-  bullet: {fileID: 2843194987033306035, guid: a69d41b051e0c9a49be9e03a62433b09, type: 3}
-  speed: 500
-  shots: 3
-  coolDownTime: 0.2
 --- !u!1 &542524447
 GameObject:
   m_ObjectHideFlags: 0
@@ -775,12 +752,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 25.946053, y: 1}
   m_EdgeRadius: 0
---- !u!4 &822784594 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7517157589121558114, guid: a9c79d30788cc9948bc5c08a894a0f03,
-    type: 3}
-  m_PrefabInstance: {fileID: 1746874429}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &988140711
 GameObject:
   m_ObjectHideFlags: 0

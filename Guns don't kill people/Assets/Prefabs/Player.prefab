@@ -88,6 +88,7 @@ GameObject:
   - component: {fileID: 488419929309199538}
   - component: {fileID: 7517157588542323187}
   - component: {fileID: 7517157588542323186}
+  - component: {fileID: 496599703}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -240,6 +241,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.43666983, y: 1.0921164}
   m_EdgeRadius: 0
+--- !u!114 &496599703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7517157588542323199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7cfaa8460b8f6d479bf0cbaca9ff5cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  barrelTip: {fileID: 7517157589121558114}
+  bullet: {fileID: 2843194987033306035, guid: a69d41b051e0c9a49be9e03a62433b09, type: 3}
+  speed: 500
+  shots: 3
+  coolDownTime: 0.2
 --- !u!1 &7517157589121558115
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,8 +314,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7517157589247741419}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.473, y: 0.403, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.706, y: 0.403, z: 0}
+  m_LocalScale: {x: 1.4, y: 1.4, z: 1.4}
   m_Children:
   - {fileID: 7517157589121558114}
   m_Father: {fileID: 7517157587652704649}
