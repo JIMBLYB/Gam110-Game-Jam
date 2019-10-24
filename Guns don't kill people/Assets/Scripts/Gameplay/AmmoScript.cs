@@ -25,7 +25,7 @@ public class AmmoScript : MonoBehaviour
             }
         }
 
-        if (counter == 1)
+        else if (counter == 1)
         {
             if (Input.GetMouseButtonDown(0))
             {
@@ -34,7 +34,7 @@ public class AmmoScript : MonoBehaviour
             }
         }
 
-        if (counter == 2)
+       else if (counter == 2)
         {
             if (Input.GetMouseButtonDown(0))
             {

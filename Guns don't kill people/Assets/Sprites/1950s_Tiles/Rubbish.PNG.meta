@@ -1,11 +1,7 @@
 fileFormatVersion: 2
-guid: 9dfb1eb2ace3892438b111be4a22cac3
+guid: 3d0e17d08fdad7e48948bdbf93329c81
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Carsplosion_0
-    21300002: Carsplosion_1
-    21300004: Carsplosion_2
-    21300006: Carsplosion_3
+  fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -44,7 +40,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -86,91 +82,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Carsplosion_0
-      rect:
-        serializedVersion: 2
-        x: 27
-        y: 369
-        width: 234
-        height: 108
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2046db880cf5a584b9e044564a995266
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Carsplosion_1
-      rect:
-        serializedVersion: 2
-        x: 315
-        y: 369
-        width: 234
-        height: 108
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0cbc371ac8873a84eba23860cf4d9243
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Carsplosion_2
-      rect:
-        serializedVersion: 2
-        x: 603
-        y: 360
-        width: 234
-        height: 144
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 91aa8a1ec34de1145be236ceb3f45f78
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Carsplosion_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 72
-        width: 288
-        height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9b04b9a2005d536419a99b24e2e918b8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: d7a9e163e36a3374e9806731d3c2c701
+    spriteID: a3ca32ba77fcf3248b8a4f5531cac7a1
     vertices: []
     indices: 
     edges: []

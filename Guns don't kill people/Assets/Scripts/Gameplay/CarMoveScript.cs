@@ -10,4 +10,11 @@ public class CarMoveScript : MonoBehaviour
     {
         transform.Translate(Vector2.left * speed * Time.deltaTime);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Crate")) { 
+        speed = 0f;
+            }
+    }
 }
