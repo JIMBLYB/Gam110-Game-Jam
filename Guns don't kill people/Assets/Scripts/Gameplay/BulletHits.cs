@@ -14,6 +14,7 @@ public class BulletHits : MonoBehaviour
     {
         hitsTaken += 1;
         if (hitsTaken >= hitsNeeded)
+            
             Destroy(gameObject);
     }
 }
