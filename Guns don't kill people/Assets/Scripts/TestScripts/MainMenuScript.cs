@@ -1,26 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenuScript : MonoBehaviour
 {
-    public Sprite hoverSprite;
-    public Sprite defaultSprite;
-    SpriteRenderer sr;
-    private void Start()
+    public void PlayGame()
     {
-        sr = GetComponent<SpriteRenderer>();
-    }
-    private void OnMouseEnter()
-    {
-        sr.sprite = hoverSprite;
-    }
-    
-
-    private void OnMouseExit()
-    {
-        sr.sprite = defaultSprite;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
