@@ -2,7 +2,9 @@
 
 public enum Tags
 {
-    Bullet = 0
+    Bullet = 0,
+    Ball = 1,
+    Damage = 2
 };
 
 

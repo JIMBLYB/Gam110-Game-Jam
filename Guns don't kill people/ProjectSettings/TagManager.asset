@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Bullet
   - Crate
+  - Ball
+  - Damage
   layers:
   - Default
   - TransparentFX

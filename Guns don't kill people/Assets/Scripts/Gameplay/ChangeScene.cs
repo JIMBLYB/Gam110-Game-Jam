@@ -5,7 +5,7 @@ public class ChangeScene : MonoBehaviour
     public static ChangeScene Instance;
     private void Awake()
     {
-        if (Instance != null) Instance = this;
+        if (Instance == null) Instance = this;
         else Destroy(this);
     }
 
@@ -16,6 +16,13 @@ public class ChangeScene : MonoBehaviour
 
     public void LoadScene(int buildIndex)
     {
+        if (buildIndex == -1)
+        {
+            Application.Quit();
+            return;
+        }
+
+        print("Loading Scene");
         SceneManager.LoadScene(buildIndex);
     }
 
@@ -23,7 +30,8 @@ public class ChangeScene : MonoBehaviour
     {
         if (Input.GetKeyDown(restartButton))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            int buildIndex = SceneManager.GetActiveScene().buildIndex;
+            if (buildIndex != 0) SceneManager.LoadScene(buildIndex);
         }
     }
 }
