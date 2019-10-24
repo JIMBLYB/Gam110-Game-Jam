@@ -4,7 +4,9 @@ public enum Tags
 {
     Bullet = 0,
     Ball = 1,
-    Damage = 2
+    Crate = 2,
+    Damage = 3,
+    Hostage = 4
 };
 
 

@@ -8,6 +8,7 @@ TagManager:
   - Crate
   - Ball
   - Damage
+  - Hostage
   layers:
   - Default
   - TransparentFX

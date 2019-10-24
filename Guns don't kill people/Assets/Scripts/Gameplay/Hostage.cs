@@ -24,6 +24,8 @@ public class Hostage : MonoBehaviour
             //Play Animation
             if (delayWinCoroutine == null) delayWinCoroutine = StartCoroutine(DelayWin(nextLevelBuildIndex));
         }
+
+        
     }
 
     private IEnumerator DelayWin(int buildIndex)
