@@ -13,16 +13,27 @@ public class ShootingScript : MonoBehaviour
     [SerializeField]
     private float speed = 1f;
 
+    [SerializeField]
     private int shots = 3;
+
+    [SerializeField]
+    private float coolDownTime = 0.2f;
+
+    private float nextFireTime = 0;
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Time.time > nextFireTime)
         {
-            if (shots > 0)
+            if (Input.GetMouseButtonDown(0))
+
             {
-                FireBullet();
-                shots = shots - 1;
+                if (shots > 0)
+                {
+                    FireBullet();
+                    shots = shots - 1;
+                    nextFireTime = Time.time + coolDownTime;
+                }
             }
         }
     }
